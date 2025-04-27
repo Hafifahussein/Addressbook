@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Address Book</h1>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" placeholder="Email" required><br><br>
+        <input type="tel" id="phone" placeholder="Phone" required><br><br>
+        <input type="text" id="address" placeholder="Address" required><br><br>
+        <button type="submit">Add Contact</button>
+    </form>
+    
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Search contacts...">
+    </div>
+    
+    <h2>Contacts</h2>
+    <div id="contacts-list"></div>
+    <script src="script.js"></script>
+    <script src="tests.js"></script>
+      <footer>
+        <p>@2025 Address Book. All rights reserved.</p>
+      </footer>
+</body>
+</html>
