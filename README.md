@@ -5,11 +5,11 @@
 ## Description  
 Addressbook is a simple, user-friendly web application that allows users to manage their contacts. With this app, users can add new contacts including name, email, phone, and address, and easily mark their contacts as favorites. The app provides a search functionality to quickly find any contact, and users can delete contacts when no longer needed. The app utilizes localStorage to persist data, ensuring that the contact information remains even after closing the browser. Addressbook is designed for anyone who needs to keep track of their contacts and access them quickly and easily.
 Features
--Add new contacts with name, email, phone, and address
--Mark contacts as favorites
--Search through contacts
--Delete contacts
--Persistent storage using localStorage
+- Add new contacts with name, email, phone, and address
+- Mark contacts as favorites
+- Search through contacts
+- Delete contacts
+- Persistent storage using localStorage
 
 ## Setup/Installation Requirements  
 1. Clone the repository:  
