@@ -5,19 +5,42 @@
 ## Description  
 Addressbook is a simple, user-friendly web application that allows users to manage their contacts. With this app, users can add new contacts including name, email, phone, and address, and easily mark their contacts as favorites. The app provides a search functionality to quickly find any contact, and users can delete contacts when no longer needed. The app utilizes localStorage to persist data, ensuring that the contact information remains even after closing the browser. Addressbook is designed for anyone who needs to keep track of their contacts and access them quickly and easily.
 Features
-<<<<<<< HEAD
- - Add new contacts with name, email, phone, and address
-  - Mark contacts as favorites
-  - Search through contacts
- - Delete contacts
- - Persistent storage using localStorage
-=======
 - Add new contacts with name, email, phone, and address
 - Mark contacts as favorites
 - Search through contacts
 - Delete contacts
 - Persistent storage using localStorage
->>>>>>> 349ae89be414557a71e01a018bf0dd558b8189a7
+### Places You've Been
+- Record visited places with location, landmarks, time of year, and notes
+- View all saved places
+- Search through places
+- Delete entries
+- Persistent storage using localStorage
+
+### To-Do List
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Clear all completed tasks
+- Persistent storage using localStorage
+
+
+## How to Use
+1. **Address Book**:
+   - Fill out the contact form and click "Add Contact"
+   - Click the star icon to mark as favorite
+   - Use the search box to filter contacts
+   - Click "Delete" to remove a contact
+
+2. **Places You've Been**:
+   - Enter location details and click "Add Place"
+   - View all your saved places
+   - Click "Delete" to remove a place
+
+3. **To-Do List**:
+   - Type a task and click "Add Task"
+   - Check the checkbox to mark as complete
+   - Click the × button to delete a task
 
 ## Setup/Installation Requirements  
 1. Clone the repository:  
