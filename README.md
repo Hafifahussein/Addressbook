@@ -21,6 +21,44 @@ No server or additional dependencies are required for basic functionality, as da
 * JavaScript  
 * HTML  
 * CSS  
+## Business Logic Tests
+
+### Contact Constructor Tests
+1. **Creates contact with correct properties**
+   - Input: `new Contact("John", "john@test.com", "1234567890", "123 Main St")`
+   - Expected: Object with name, email, phone, address properties
+   - Test: `console.assert(contact.name === "John" && contact.email === "john@test.com")`
+
+2. **Initializes with isFavorite as false**
+   - Expected: `contact.isFavorite === false`
+
+### AddressBook Tests
+1. **Adds contact to address book**
+   - Input: `addressBook.addContact(contact)`
+   - Expected: `addressBook.contacts.length === 1`
+   - Test: `console.assert(addressBook.contacts.length === 1)`
+
+2. **Toggles favorite status**
+   - Input: `addressBook.toggleFavorite(0)`
+   - Expected: `contact.isFavorite === true` (toggles from initial false)
+   - Test: `console.assert(addressBook.contacts[0].isFavorite === true)`
+
+3. **Deletes contact**
+   - Input: `addressBook.deleteContact(0)`
+   - Expected: `addressBook.contacts.length === 0`
+   - Test: `console.assert(addressBook.contacts.length === 0)`
+
+4. **Searches contacts**
+   - Setup: Add multiple contacts
+   - Input: `addressBook.searchContacts("john")`
+   - Expected: Array containing only matching contacts
+   - Test: `console.assert(results.length === 1 && results[0].name === "John")`
+
+## Peer Code Review Checklist
+- [x] JavaScript objects drive application logic
+- [x] Constructors and prototypes used successfully
+- [x] Pseudo-coded tests present in README
+- [x] Application works as expected
 
 ## Support and Contact Details  
 If you have any issues, questions, or suggestions, feel free to contact me at hafifahussein5@gmail.com** or open an issue on the GitHub repository.
