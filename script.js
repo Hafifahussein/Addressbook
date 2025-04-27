@@ -162,3 +162,35 @@ const UI = {
 };
 
 document.addEventListener('DOMContentLoaded', () => UI.init());
+
+function addTask() {
+    const taskInput = document.getElementById('task');
+    const taskText = taskInput.value.trim();
+
+    if (taskText === '') {
+        alert('Please enter a task!');
+        return;
+    }
+
+    const taskList = document.getElementById('tasklist');
+
+    const li = document.createElement('li');
+    li.textContent = taskText;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.className = 'delete-btn';
+    deleteBtn.onclick = function() {
+        taskList.removeChild(li);
+    };
+
+    li.onclick = function(event) {
+        if (event.target !== deleteBtn) { 
+            li.classList.toggle('completed');
+        }
+    };
+
+    li.appendChild(deleteBtn);
+    taskList.appendChild(li);
+    taskInput.value = '';
+}
