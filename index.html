@@ -3,29 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Book</title>
+    <title>Weekend Homework Projects</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Address Book</h1>
-    <form id="contact-form">
-        <input type="text" id="name" placeholder="Name" required><br><br>
-        <input type="email" id="email" placeholder="Email" required><br><br>
-        <input type="tel" id="phone" placeholder="Phone" required><br><br>
-        <input type="text" id="address" placeholder="Address" required><br><br>
-        <button type="submit">Add Contact</button>
-    </form>
-    
-    <div id="search-container">
-        <input type="text" id="search" placeholder="Search contacts...">
-    </div>
-    
-    <h2>Contacts</h2>
-    <div id="contacts-list"></div>
-    <script src="script.js"></script>
-    <script src="tests.js"></script>
-      <footer>
-        <p>@2025 Address Book. All rights reserved.</p>
-      </footer>
+    <header>
+        <h1>Application Projects</h1>
+    </header>
+
+    <main>
+        <section id="address-book" class="app-section">
+            <h2>Address Book</h2>
+            <form id="contact-form" class="app-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button type="submit">Add Contact</button>
+            </form>
+            
+            <div class="search-container">
+                <input type="text" id="contact-search" placeholder="Search contacts...">
+            </div>
+            
+            <h3>Contacts</h3>
+            <div id="contacts-list" class="items-container"></div>
+        </section>
+        <section id="places-tracker" class="app-section">
+            <h2>Places You've Been</h2>
+            <form id="place-form" class="app-form">
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="text" id="landmarks" placeholder="Landmarks (comma separated)">
+                <input type="text" id="time-of-year" placeholder="Time of Year">
+                <textarea id="notes" placeholder="Notes"></textarea>
+                <button type="submit">Add Place</button>
+            </form>
+            
+            <h3>Your Places</h3>
+            <div id="places-list" class="items-container"></div>
+        </section>
+        <section id="todo-list" class="app-section">
+            <h2>To-Do List</h2>
+            <form id="task-form" class="app-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            
+            <h3>Your Tasks</h3>
+            <ul id="tasks-container" class="items-container"></ul>
+        </section>
+    </main>
+
+    <script src="addressBook.js"></script>
+    <script src="placesTracker.js"></script>
+    <script src="todoList.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
