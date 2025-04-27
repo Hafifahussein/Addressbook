@@ -61,7 +61,7 @@ No server or additional dependencies are required for basic functionality, as da
 - [x] Application works as expected
 
 ## Support and Contact Details  
-If you have any issues, questions, or suggestions, feel free to contact me at hafifahussein5@gmail.com** or open an issue on the GitHub repository.
+If you have any issues, questions, or suggestions, feel free to contact me at https://github.com/Hafifahussein/Addressbook.git or open an issue on the GitHub repository.
 
 ## License  
 *MIT License*  
